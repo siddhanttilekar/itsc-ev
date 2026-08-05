@@ -1,0 +1,47 @@
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 0 ACT 0 BUF 0)                      
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 0 ACT 0 BUF 0)                       Step #20.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 6 ACT 6 BUF 0)                      
+ Retrying in 1 seconds
+✅ Traffic Signal IDs: ['t']
+ Retrying in 1 seconds
+✅ Number of parsed phases: 4
+✅ Parsed Phases:
+  Phase 0: GGrr | Duration: 60.0
+  Phase 1: rrGG | Duration: 60.0
+  Phase 2: yyrr | Duration: 3.0
+  Phase 3: rryy | Duration: 3.0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+Current phase index: 0
+ Retrying in 1 seconds
+Using cuda device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Traceback (most recent call last):
+  File "/home/ros/SUMO/SUMO_RL/sumo-rl/sumo_rl/nets/single-intersection/train_a2c_netto.py", line 41, in <module>
+    model = A2C("MlpPolicy", env, verbose=1)
+  File "/home/ros/.local/lib/python3.10/site-packages/stable_baselines3/a2c/a2c.py", line 87, in __init__
+    super().__init__(
+  File "/home/ros/.local/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 78, in __init__
+    super().__init__(
+  File "/home/ros/.local/lib/python3.10/site-packages/stable_baselines3/common/base_class.py", line 172, in __init__
+    assert isinstance(self.action_space, supported_action_spaces), (
+AssertionError: The algorithm only supports (<class 'gym.spaces.box.Box'>, <class 'gym.spaces.discrete.Discrete'>, <class 'gym.spaces.multi_discrete.MultiDiscrete'>, <class 'gym.spaces.multi_binary.MultiBinary'>) as action spaces but Discrete(2) was provided
+Step #0.00Error: tcpip::Socket::recvAndCheck @ recv: peer shutdown
+Quitting (on error).

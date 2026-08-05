@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-14 13:56:46 by Eclipse SUMO netedit Version 1.23.1
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="t_0" length="5.00" maxSpeed="30.00" vClass="emergency" color="red" accel="3.0" decel="6.0">
+        <param key="bluelight.device.overtake" value="false"/>
+        <param key="has.bluelight.device" value="false"/>
+    </vType>
+    <!-- Routes -->
+    <route id="R1_LFT" edges="296308756 33851664 296308761#0 296308761#1 -24341759#0 -1096349414 -1096349415" color="0,0,128"/>
+    <route id="R1_R" edges="296308756 33851664 296308761#0 296308761#1 24341759#1 24341759#2 24341759#3 24341759#4" color="red"/>
+    <route id="R1_STR" edges="296308756 33851664 296308761#0 296308761#1 215617358 303398913#0 303398913#1 303398913#2 296308765#0 296308765#1" color="magenta"/>
+    <route id="R2_LFT" edges="1096349415 1096349414 24341759#0 215617358 303398913#0 303398913#1 303398913#2 296308765#0 296308765#1" color="127,255,0"/>
+    <route id="R2_R" edges="1096349415 1096349414 24341759#0 -296308761#1 -296308761#0 -33851664 -296308756" color="green"/>
+    <route id="R2_STR" edges="1096349415 1096349414 24341759#0 24341759#1 24341759#2 24341759#3 24341759#4" color="green"/>
+    <route id="R3_LFT" edges="-296308765#1 -296308765#0 -303398913#2 -303398913#1 -303398913#0 -215617358 24341759#1 24341759#2 24341759#3 24341759#4" color="0,128,128"/>
+    <route id="R3_R" edges="-296308765#1 -296308765#0 -303398913#2 -303398913#1 -303398913#0 -215617358 -24341759#0 -1096349414 -1096349415" color="128,0,128"/>
+    <route id="R3_STR" edges="-296308765#1 -296308765#0 -303398913#2 -303398913#1 -303398913#0 -215617358 -296308761#1 -296308761#0 -33851664 -296308756" color="0,0,128"/>
+    <route id="R4_LFT" edges="-24341759#4 -24341759#3 -24341759#2 -24341759#1 -296308761#1 -296308761#0 -33851664 -296308756" color="229,135,52"/>
+    <route id="R4_R" edges="-24341759#4 -24341759#3 -24341759#2 -24341759#1 215617358 303398913#0 303398913#1 303398913#2 296308765#0 296308765#1" color="32,230,230"/>
+    <route id="R4_STR" edges="-24341759#4 -24341759#3 -24341759#2 -24341759#1 -24341759#0 -1096349414 -1096349415" color="35,21,233"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="f_12" type="t_0" begin="0.00" route="R1_R" end="1800.00" vehsPerHour="15.00"/>
+    <flow id="f_0" begin="10.00" route="R1_R" end="1800.00" vehsPerHour="140.00"/>
+    <flow id="f_1" begin="10.00" route="R1_STR" end="1800.00" vehsPerHour="180.00"/>
+    <flow id="f_10" begin="10.00" route="R4_STR" end="1800.00" vehsPerHour="120.00"/>
+    <flow id="f_11" begin="10.00" route="R4_LFT" end="1800.00" vehsPerHour="120.00"/>
+    <flow id="f_2" begin="10.00" route="R1_LFT" end="1800.00" vehsPerHour="180.00"/>
+    <flow id="f_3" begin="10.00" route="R2_R" end="1800.00" vehsPerHour="80.00"/>
+    <flow id="f_4" begin="10.00" route="R2_LFT" end="1800.00" vehsPerHour="80.00"/>
+    <flow id="f_5" begin="10.00" route="R2_STR" end="1800.00" vehsPerHour="60.00"/>
+    <flow id="f_6" begin="10.00" route="R3_STR" end="1800.00" vehsPerHour="180.00"/>
+    <flow id="f_7" begin="10.00" route="R3_LFT" end="1800.00" vehsPerHour="180.00"/>
+    <flow id="f_8" begin="10.00" route="R3_R" end="1800.00" vehsPerHour="180.00"/>
+    <flow id="f_9" begin="10.00" route="R4_R" end="1800.00" vehsPerHour="60.00"/>
+    <flow id="f_13" type="t_0" begin="45.00" route="R3_LFT" end="1800.00" vehsPerHour="15.00"/>
+</routes>
