@@ -10,7 +10,7 @@ While the project evaluates multiple control strategies, it specifically highlig
 
 The framework models an urban intersection in SUMO based on real-world map data from Kronach, Germany (ABS intersection). Emergency vehicles are introduced with blue-light priority behaviors, including traffic rule overrides and lane-overtaking privileges.
 
-![ABS Intersection SUMO Simulation](assets/abs_intersection.png)
+![ABS Intersection SUMO Simulation](Documents/ABS%20Intersection.png)
 
 Three primary signal control strategies are evaluated against an unmanaged baseline:
 
@@ -28,7 +28,7 @@ The Advantage Actor-Critic (A2C) model operates as an actor-critic RL framework:
 * **Actor:** Receives state information from the SUMO/TraCI environment and selects signal control actions (green light phase).
 * **Critic:** Evaluates the Q-value based on the environment's reward signal and passes the advantage estimate to guide actor updates.
 
-![A2C Architecture](assets/a2c_architecture.png)
+![A2C Architecture](Documents/A2C%20architecture.png)
 
 ---
 
@@ -36,13 +36,12 @@ The Advantage Actor-Critic (A2C) model operates as an actor-critic RL framework:
 
 Simulations were executed across all control strategies using real-world vehicle flow data collected at the ABS intersection.
 
-![Comparison of the Algorithms with the Baseline](assets/algorithm_comparison.png)
+![Comparison of the Algorithms with the Baseline](Documents/Comparison%20of%20the%20Algorithms%20with%20the%20Baseline.png)
 
 A comparison of key performance metrics demonstrates the performance advantage of A2C:
 
 | Control Strategy | Average Queue Length (vehicles) | Average Waiting Time (s) | Total Collisions |
 | :--- | :--- | :--- | :--- |
-| **Baseline** | Fluctuating (5–18) | Frequently > 10.0 | 2 |
 | **Round Robin (RR)** | < 120 (accumulative) | < 70.0 | 8 |
 | **Feedback Control** | ~6.0 | ~0.2 | 0 |
 | **A2C Reinforcement Learning** | **~2.5** | **~0.5** | **0** |
